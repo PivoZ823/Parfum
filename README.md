@@ -1,273 +1,232 @@
  Parfum
 
- Il profumo giusto, per la persona giusta.
-
  1. Cos'è Parfum?
 
-**Parfum** è una web application dedicata al mondo dei profumi, pensata per aiutare gli utenti a trovare la fragranza più adatta ai propri gusti e alle proprie esigenze.
+Parfum è un sito web dedicato al mondo dei profumi, pensato per aiutare le persone a trovare una fragranza adatta ai propri gusti.
 
-Il sito offre un catalogo di profumi consultabile attraverso una ricerca e diversi filtri, come prezzo, stagione, categoria e intensità.
+L'idea nasce dal fatto che scegliere un profumo non è sempre facile, soprattutto quando non si conoscono bene le varie marche e le caratteristiche delle fragranze.
 
-Una delle funzionalità principali è un **quiz personalizzato**, attraverso il quale l'utente può inserire le proprie preferenze e ricevere consigli sui profumi più adatti.
+Sul sito sarà possibile cercare profumi, vedere le loro caratteristiche e filtrarli in base al prezzo, alla stagione e al tipo di fragranza.
 
-L'obiettivo è rendere la scelta di un profumo più semplice, anche per chi non conosce le caratteristiche delle fragranze.
+Una delle funzioni principali sarà un quiz, dove l'utente potrà rispondere ad alcune domande sui propri gusti e ricevere dei consigli sui profumi più adatti.
 
- Quale problema vuole risolvere?
+Sarà anche possibile creare un account, salvare i profumi preferiti e lasciare recensioni. In futuro vorremmo aggiungere anche un abbonamento che permetta di accedere a contenuti e funzioni extra.
 
-Scegliere un profumo non è sempre semplice, soprattutto per chi non conosce le differenze tra le varie fragranze.
-
-Spesso gli utenti devono cercare informazioni su diversi siti, confrontare prodotti e leggere molte recensioni prima di trovare un profumo interessante.
-
-Parfum vuole semplificare questo processo, raccogliendo le informazioni in un'unica piattaforma e aiutando l'utente attraverso un sistema di raccomandazione personalizzato.
-
- Obiettivi
-
-- Rendere semplice e veloce la ricerca di un profumo.
-- Permettere di filtrare i prodotti secondo le proprie preferenze.
-- Consigliare profumi attraverso un quiz.
-- Fornire informazioni dettagliate sulle fragranze.
-- Permettere agli utenti registrati di salvare preferiti e lasciare recensioni.
-- Offrire in futuro funzionalità aggiuntive attraverso un abbonamento.
+Il nostro obiettivo è creare un sito semplice da utilizzare, sia per chi conosce già il mondo dei profumi, sia per chi vuole iniziare a scoprirlo.
 
 
 
- 2. Funzionalità e attori
+ 2. User Stories
 
-La web application prevede quattro tipologie di utenti.
-
-| Attore | Descrizione |
-|---|---|
-| Utente non loggato | Può visualizzare la homepage, consultare il catalogo, cercare profumi, utilizzare filtri, consultare le schede ed effettuare il quiz. |
-| Utente loggato | Può utilizzare tutte le funzionalità pubbliche e inoltre salvare preferiti e lasciare recensioni. |
-| Utente abbonato | Potrà accedere a contenuti aggiuntivi, consigli personalizzati e funzionalità esclusive. |
-| Admin | Può gestire profumi e recensioni e visualizzare le statistiche sui prodotti più cercati. |
-
-3. User Stories
-
-Le User Stories descrivono le funzionalità dal punto di vista di chi utilizza il sito.
+Le User Stories servono a capire quali funzionalità deve avere il sito, mettendosi nei panni delle persone che lo utilizzeranno.
 
 | ID | User Story |
 |---|---|
-| US01 | Come visitatore, voglio visualizzare la homepage per capire immediatamente lo scopo del sito. |
-| US02 | Come visitatore, voglio consultare un catalogo per scoprire i profumi disponibili. |
-| US03 | Come visitatore, voglio cercare un profumo per nome per trovarlo velocemente. |
-| US04 | Come visitatore, voglio filtrare i profumi per categoria, prezzo, stagione e intensità per trovare quelli adatti a me. |
-| US05 | Come visitatore, voglio visualizzare la scheda dettagliata di un profumo per conoscerne le caratteristiche. |
-| US06 | Come visitatore, voglio effettuare un quiz per trovare un profumo adatto alle mie preferenze. |
-| US07 | Come visitatore, voglio visualizzare i risultati del quiz per conoscere i profumi consigliati. |
-| US08 | Come visitatore, voglio registrarmi per accedere alle funzionalità riservate. |
-| US09 | Come utente registrato, voglio effettuare il login per accedere al mio account. |
-| US10 | Come utente loggato, voglio salvare un profumo nei preferiti per ritrovarlo facilmente. |
-| US11 | Come utente loggato, voglio visualizzare la lista dei preferiti per consultare i profumi salvati. |
-| US12 | Come utente loggato, voglio lasciare una recensione per condividere la mia opinione. |
-| US13 | Come amministratore, voglio gestire profumi e recensioni per mantenere aggiornato il sito. |
-| US14 | Come amministratore, voglio consultare le statistiche per scoprire i profumi più cercati. |
-| US15 | Come utente abbonato, voglio accedere a funzionalità e consigli esclusivi per ottenere un'esperienza più personalizzata. |
+| US01 | Come utente, voglio vedere una homepage chiara per capire subito cosa offre il sito. |
+| US02 | Come utente, voglio vedere un catalogo per scoprire i profumi disponibili. |
+| US03 | Come utente, voglio cercare un profumo per nome per trovarlo più velocemente. |
+| US04 | Come utente, voglio usare dei filtri per trovare profumi in base al prezzo, alla stagione e alla fragranza. |
+| US05 | Come utente, voglio aprire la scheda di un profumo per leggere le sue caratteristiche. |
+| US06 | Come utente, voglio fare un quiz per scoprire quali profumi potrebbero piacermi. |
+| US07 | Come utente, voglio vedere i risultati del quiz per scegliere tra i profumi consigliati. |
+| US08 | Come utente, voglio registrarmi per utilizzare anche le funzioni riservate. |
+| US09 | Come utente registrato, voglio effettuare il login per entrare nel mio account. |
+| US10 | Come utente registrato, voglio salvare i profumi che mi piacciono nei preferiti. |
+| US11 | Come utente registrato, voglio vedere i profumi salvati nei preferiti. |
+| US12 | Come utente registrato, voglio lasciare recensioni per condividere la mia opinione. |
+| US13 | Come amministratore, voglio aggiungere, modificare o eliminare i profumi e gestire le recensioni. |
+| US14 | Come amministratore, voglio vedere quali profumi vengono cercati di più. |
+| US15 | Come utente abbonato, voglio avere accesso a consigli e contenuti esclusivi. |
 
 
 
- 4. Requisiti software
+ 3. Requisiti software
 
-I requisiti software rappresentano le caratteristiche e le funzionalità che il sistema deve possedere.
+I requisiti software indicano cosa deve fare il sito e quali caratteristiche deve avere per funzionare correttamente.
 
-Si dividono in tre categorie principali.
+Si dividono in tre categorie: funzionali, non funzionali e di dominio.
 
-4.1 Requisiti funzionali
+ 3.1 Requisiti funzionali
 
-Descrivono **cosa deve fare il sistema**, quindi le operazioni che l'utente può eseguire.
+Sono tutte le operazioni che il sito deve permettere di fare.
 
-| ID | Requisito funzionale |
+| ID | Requisito |
 |---|---|
-| RF01 | Il sistema deve mostrare una homepage con le informazioni principali. |
-| RF02 | Il sistema deve permettere di visualizzare il catalogo dei profumi. |
-| RF03 | Il sistema deve consentire la ricerca dei profumi. |
-| RF04 | Il sistema deve permettere di filtrare i prodotti per categoria, prezzo, stagione e intensità. |
-| RF05 | Il sistema deve mostrare la scheda dettagliata dei profumi. |
-| RF06 | Il sistema deve permettere all'utente di completare un quiz personalizzato. |
-| RF07 | Il sistema deve mostrare i profumi consigliati in base alle risposte del quiz. |
-| RF08 | Il sistema deve consentire registrazione e login. |
-| RF09 | Il sistema deve permettere agli utenti autenticati di salvare e visualizzare i preferiti. |
-| RF10 | Il sistema deve consentire agli utenti autenticati di lasciare recensioni. |
-| RF11 | Il sistema deve permettere all'admin di gestire profumi e recensioni. |
-| RF12 | Il sistema deve permettere all'admin di consultare le statistiche sui profumi più cercati. |
+| RF01 | Il sito deve avere una homepage con le informazioni principali. |
+| RF02 | Deve essere possibile visualizzare il catalogo dei profumi. |
+| RF03 | L'utente deve poter cercare un profumo tramite il nome. |
+| RF04 | Deve essere possibile filtrare i profumi per prezzo, categoria, stagione e intensità. |
+| RF05 | Ogni profumo deve avere una scheda con le proprie caratteristiche. |
+| RF06 | L'utente deve poter completare un quiz sui propri gusti. |
+| RF07 | Alla fine del quiz devono essere mostrati i profumi consigliati. |
+| RF08 | Deve essere possibile registrarsi ed effettuare il login. |
+| RF09 | Gli utenti registrati devono poter salvare e visualizzare i preferiti. |
+| RF10 | Gli utenti registrati devono poter scrivere recensioni. |
+| RF11 | L'amministratore deve poter gestire i profumi e le recensioni. |
+| RF12 | L'amministratore deve poter vedere le statistiche dei profumi più cercati. |
 
-Le funzionalità relative agli abbonamenti sono previste come possibile estensione e richiedono una successiva definizione tecnica.
+3.2 Requisiti non funzionali
 
- 4.2 Requisiti non funzionali
+Riguardano il modo in cui il sito deve funzionare.
 
-Descrivono **come deve funzionare il sistema**, quindi aspetti come prestazioni, sicurezza e facilità di utilizzo.
-
-| ID | Requisito non funzionale |
+| ID | Requisito |
 |---|---|
-| RNF01 | Il sito deve avere un'interfaccia semplice e intuitiva. |
-| RNF02 | Il sito deve essere responsive e adattarsi a computer, tablet e smartphone. |
-| RNF03 | Le pagine e i risultati di ricerca devono caricarsi in tempi ragionevoli. |
-| RNF04 | Le password e i dati degli utenti devono essere protetti. |
-| RNF05 | Il sistema deve gestire eventuali errori senza interrompere completamente il servizio. |
-| RNF06 | Il codice deve essere ordinato e facilmente modificabile. |
-| RNF07 | I testi e i pulsanti devono essere leggibili e facilmente utilizzabili. |
-| RNF08 | Le funzioni amministrative devono essere accessibili soltanto agli utenti autorizzati. |
+| RNF01 | Il sito deve essere semplice da capire e utilizzare. |
+| RNF02 | Deve funzionare correttamente sia da computer sia da telefono. |
+| RNF03 | Le pagine non devono impiegare troppo tempo a caricarsi. |
+| RNF04 | I dati personali degli utenti devono essere protetti. |
+| RNF05 | Il sito deve funzionare senza errori che impediscano di utilizzarlo. |
+| RNF06 | Il codice deve essere ordinato per facilitare eventuali modifiche. |
+| RNF07 | Testi, pulsanti e immagini devono essere ben visibili e leggibili. |
+| RNF08 | Solo l'amministratore deve poter accedere alle funzioni di gestione. |
 
- 4.3 Requisiti di dominio
+ 3.3 Requisiti di dominio
 
-Descrivono **le regole specifiche del settore della profumeria** che il sistema deve conoscere e rispettare.
+Sono le regole legate al mondo dei profumi che il sito deve rispettare.
 
-| ID | Requisito di dominio |
+| ID | Requisito |
 |---|---|
-| RD01 | I profumi devono essere organizzati in categorie olfattive. |
-| RD02 | Ogni profumo deve avere informazioni come nome, marca, prezzo e caratteristiche. |
-| RD03 | I profumi devono poter essere associati alle stagioni consigliate. |
-| RD04 | Deve essere possibile distinguere i profumi in base alla loro intensità. |
-| RD05 | Il quiz deve utilizzare le preferenze dell'utente per individuare i profumi compatibili. |
-| RD06 | Le schede possono riportare le note olfattive di testa, cuore e fondo, quando disponibili. |
-| RD07 | Le raccomandazioni devono essere considerate suggerimenti e non garanzie, perché la percezione delle fragranze è soggettiva. |
+| RD01 | I profumi devono essere divisi in categorie, ad esempio dolci, freschi, agrumati e legnosi. |
+| RD02 | Ogni profumo deve avere informazioni come nome, marca, prezzo e descrizione. |
+| RD03 | Deve essere indicata la stagione più adatta a ogni profumo, quando disponibile. |
+| RD04 | I profumi devono poter essere distinti in base all'intensità. |
+| RD05 | Il quiz deve consigliare i profumi in base alle risposte dell'utente. |
+| RD06 | Le schede dei profumi possono mostrare le note principali della fragranza. |
+| RD07 | I consigli non devono essere considerati una certezza, perché ogni persona può percepire gli odori in modo diverso. |
 
 
 
- 5. Analisi delle funzionalità e delle priorità
+ 4. Analisi delle funzionalità
 
-Per organizzare lo sviluppo vengono utilizzati due criteri:
+Per organizzarci con il lavoro abbiamo diviso le funzionalità in base al tempo necessario per realizzarle e alla loro importanza.
 
-- **Tempo di realizzazione:** stima delle ore necessarie a completare la funzionalità.
-- **Priorità:** valore da 1 a 5, dove 5 indica la massima importanza.
+La priorità va da 1 a 5, dove 5 indica una funzione molto importante.
 
-La seguente tabella riporta le funzionalità e le stime definite nel foglio Excel di progetto.
+| Funzionalità | Chi la utilizza | Tempo stimato | Priorità |
+|---|---|---|---|
+| Visualizzare homepage | Utente non loggato | 3 ore | 5 |
+| Visualizzare catalogo | Utente non loggato | 4 ore | 5 |
+| Cercare profumi | Utente non loggato | 3 ore | 4 |
+| Filtrare profumi | Utente non loggato | 5 ore | 4 |
+| Visualizzare scheda profumo | Utente non loggato | 3 ore | 5 |
+| Fare il quiz | Utente non loggato | 7 ore | 5 |
+| Visualizzare risultato quiz | Utente non loggato | 3 ore | 5 |
+| Creare un account | Utente non loggato | 4 ore | 3 |
+| Effettuare login | Utente non loggato | 3 ore | 3 |
+| Salvare preferiti | Utente loggato | 4 ore | 3 |
+| Visualizzare preferiti | Utente loggato | 3 ore | 3 |
+| Lasciare recensioni | Utente loggato | 4 ore | 2 |
+| Gestire profumi e recensioni | Admin | 6 ore | 2 |
+| Visualizzare statistiche | Admin | 5 ore | 1 |
 
-| # | Funzionalità | Attore | Tempo | Priorità |
-|---|---|---|---|---|
-| 1 | Visualizzare homepage / landing page | Non loggato | 3 h | 5 |
-| 2 | Visualizzare catalogo profumi | Non loggato | 4 h | 5 |
-| 3 | Cercare un profumo | Non loggato | 3 h | 4 |
-| 4 | Filtrare per categoria, prezzo, stagione e intensità | Non loggato | 5 h | 4 |
-| 5 | Visualizzare scheda profumo | Non loggato | 3 h | 5 |
-| 6 | Fare il quiz personalizzato | Non loggato | 7 h | 5 |
-| 7 | Visualizzare risultato quiz | Non loggato | 3 h | 5 |
-| 8 | Creare un account | Non loggato | 4 h | 3 |
-| 9 | Effettuare login | Non loggato | 3 h | 3 |
-| 10 | Salvare un profumo nei preferiti | Loggato | 4 h | 3 |
-| 11 | Visualizzare preferiti | Loggato | 3 h | 3 |
-| 12 | Lasciare una recensione | Loggato | 4 h | 2 |
-| 13 | Gestire profumi e recensioni | Admin | 6 h | 2 |
-| 14 | Visualizzare statistiche | Admin | 5 h | 1 |
+**Tempo totale previsto: 57 ore.**
 
-**Tempo totale stimato: 57 ore.**
+ Ordine di realizzazione
 
-Questa stima riguarda esclusivamente le 14 funzionalità indicate e non comprende eventuali attività aggiuntive, come test approfonditi, documentazione e abbonamenti.
+Abbiamo deciso di iniziare dalle parti principali del sito, cioè la homepage, il catalogo e le schede dei profumi.
 
- Ordine di sviluppo
+Dopo passeremo al quiz, alla ricerca e ai filtri, che sono alcune delle funzioni più importanti di Parfum.
 
-Fase 1 – Struttura principale**
+Una volta completate queste parti ci occuperemo della registrazione, del login e dei preferiti.
 
-Realizzazione della homepage, del catalogo e delle schede dettagliate dei profumi.
-
-Fase 2 – Ricerca e personalizzazione**
-
-Sviluppo del quiz, della visualizzazione dei risultati, della ricerca e dei filtri.
-
-Fase 3 – Gestione utenti**
-
-Implementazione della registrazione, del login e dei preferiti.
-
-Fase 4 – Funzionalità aggiuntive**
-
-Sviluppo delle recensioni, degli strumenti amministrativi e delle statistiche.
-
-Fase 5 – Sviluppi futuri**
-
-Possibile integrazione degli abbonamenti, dei contenuti esclusivi e dei consigli più avanzati basati sull'intelligenza artificiale.
+Infine realizzeremo le recensioni e le funzioni riservate all'amministratore, come la gestione dei profumi e le statistiche.
 
 
 
- 6. Analisi SWOT
+ 5. Analisi SWOT
 
-L'analisi SWOT serve a identificare i punti di forza, le debolezze, le opportunità e le minacce del progetto.
+L'analisi SWOT ci aiuta a capire quali sono i punti forti e deboli del nostro progetto, ma anche quali opportunità e difficoltà potremmo incontrare.
 
- Strengths – Punti di forza
+Punti di forza (Strengths)
 
-- Interfaccia semplice, comprensibile anche per utenti poco esperti.
-- Quiz che facilita la ricerca di un profumo.
-- Possibilità di utilizzare più filtri.
-- Catalogo con informazioni raccolte in un'unica piattaforma.
-- Preferiti e recensioni per gli utenti registrati.
-- Possibilità di integrare funzionalità IA.
+- Il sito è pensato per essere semplice da utilizzare.
+- Il quiz aiuta a scegliere un profumo senza dover conoscere tutte le marche.
+- I filtri permettono di trovare più facilmente ciò che si cerca.
+- Gli utenti possono salvare i preferiti e leggere le recensioni.
+- Tutte le informazioni principali sono raccolte in un unico sito.
 
- Weaknesses – Punti di debolezza
+ Punti di debolezza (Weaknesses)
 
-- Necessità di aggiornare regolarmente il catalogo.
-- Dipendenza dalla correttezza delle informazioni sui profumi.
-- Impossibilità di provare fisicamente una fragranza attraverso il sito.
-- Tempo necessario per sviluppare e mantenere le varie funzionalità.
+- Dobbiamo mantenere aggiornato il catalogo.
+- Non è possibile sentire realmente l'odore di un profumo attraverso il sito.
+- Il quiz potrebbe non consigliare sempre il profumo giusto.
+- Alcune funzioni richiedono parecchio tempo per essere sviluppate.
 
-Opportunities – Opportunità
+Opportunità (Opportunities)
 
-- Crescente interesse verso il mondo della profumeria.
-- Possibilità di collaborare con negozi e marchi.
-- Introduzione di abbonamenti e contenuti premium.
-- Sviluppo di un'applicazione mobile.
-- Utilizzo dell'intelligenza artificiale per migliorare i consigli.
+- Molte persone sono interessate al mondo dei profumi.
+- In futuro potremmo collaborare con negozi o marche.
+- Potremmo aggiungere consigli più avanzati utilizzando l'intelligenza artificiale.
+- Potremmo realizzare anche un'app per smartphone.
+- Gli abbonamenti potrebbero offrire nuove funzioni agli utenti.
 
- Threats – Minacce
+ Minacce (Threats)
 
-- Presenza di siti di profumeria già conosciuti.
-- Concorrenza di grandi piattaforme e negozi online.
-- Variazioni nei prezzi e nella disponibilità dei profumi.
-- Costi di gestione ed eventuali servizi IA.
-- Possibile diffidenza degli utenti verso i consigli automatici.
-
-Conclusione SWOT
-
-Parfum ha come principale punto di forza la semplicità di utilizzo, unita alla possibilità di ricevere suggerimenti personalizzati.
-
-La difficoltà principale è rappresentata dalla natura soggettiva dei profumi: una fragranza consigliata potrebbe non piacere dopo essere stata provata.
-
-Il sito vuole quindi aiutare l'utente a restringere la scelta, senza sostituire completamente la prova fisica del prodotto.
+- Esistono già siti molto conosciuti dedicati ai profumi.
+- I prezzi e la disponibilità dei prodotti possono cambiare.
+- Non tutti gli utenti potrebbero fidarsi dei consigli del quiz.
+- Mantenere il sito aggiornato potrebbe richiedere tempo e risorse.
 
 
 
- 7. UML – Diagramma dei casi d'uso
+ 6. UML – Casi d'uso
 
-Il diagramma dei casi d'uso rappresenta le interazioni tra gli utenti e il sistema Parfum.
+Il diagramma dei casi d'uso serve a mostrare cosa possono fare i diversi utenti all'interno del sito.
 
-### Attori
+Abbiamo individuato quattro tipi di utenti.
 
-**Utente non loggato:** accede alle funzionalità pubbliche del sito.
+Utente non loggato
 
-**Utente loggato:** può utilizzare anche i preferiti e le recensioni.
+Può utilizzare le funzioni principali senza dover creare un account: vedere il catalogo, cercare profumi, usare i filtri, leggere le schede e fare il quiz.
 
-**Utente abbonato:** rappresenta un'estensione prevista con funzionalità esclusive.
+Può anche registrarsi o effettuare il login.
 
-**Admin:** gestisce i contenuti del sito e consulta le statistiche.
+Utente loggato
 
- Principali casi d'uso
+Oltre a tutte le funzioni disponibili agli utenti non loggati, può salvare i profumi nei preferiti, visualizzare quelli salvati e lasciare recensioni.
 
-| Attore | Casi d'uso |
+Utente abbonato
+
+In futuro potrà accedere a funzionalità esclusive e consigli aggiuntivi. Avrà comunque accesso a tutte le funzioni degli utenti registrati.
+
+ Amministratore
+
+Si occupa di gestire i profumi presenti sul sito e le recensioni. Può anche consultare le statistiche per vedere quali profumi vengono cercati maggiormente.
+
+Tabella dei casi d'uso
+
+| Caso d'uso | Utente |
 |---|---|
-| Utente non loggato | Visualizzare homepage, catalogo e schede, cercare, filtrare, fare quiz, vedere risultati, registrarsi, effettuare login |
-| Utente loggato | Tutte le funzionalità pubbliche, salvare preferiti, visualizzare preferiti, lasciare recensioni |
-| Utente abbonato | Funzionalità di utente loggato e, in futuro, contenuti esclusivi |
-| Admin | Gestire profumi, gestire recensioni, visualizzare statistiche |
+| Visualizzare homepage | Non loggato |
+| Visualizzare catalogo | Non loggato |
+| Cercare profumi | Non loggato |
+| Filtrare profumi | Non loggato |
+| Visualizzare scheda profumo | Non loggato |
+| Fare il quiz | Non loggato |
+| Visualizzare risultato quiz | Non loggato |
+| Registrarsi | Non loggato |
+| Effettuare login | Non loggato |
+| Salvare preferiti | Loggato |
+| Visualizzare preferiti | Loggato |
+| Lasciare recensioni | Loggato |
+| Accedere a contenuti esclusivi | Abbonato (futuro) |
+| Gestire profumi e recensioni | Admin |
+| Visualizzare statistiche | Admin |
 
- Relazioni tra i casi d'uso
-
-- L'utente loggato può eseguire tutte le operazioni dell'utente non loggato.
-- L'utente abbonato può eseguire tutte le operazioni dell'utente loggato.
-- Il quiz porta alla visualizzazione dei risultati.
-- La gestione dei contenuti è riservata all'admin.
-- Il salvataggio dei preferiti e la pubblicazione delle recensioni richiedono l'autenticazione.
+Gli utenti loggati possono svolgere anche tutte le operazioni disponibili agli utenti non loggati.
 
 
 
- 8. Possibili sviluppi futuri
+ 7. Possibili sviluppi futuri
 
-Una volta completate le funzionalità principali, Parfum potrebbe essere ampliato con:
+Una volta terminate le funzioni principali, vorremmo aggiungere altre possibilità per rendere Parfum più completo.
 
-- Abbonamenti con vantaggi esclusivi.
-- Assistente virtuale basato sull'intelligenza artificiale.
-- Consigli personalizzati sulla base dei profumi già apprezzati.
-- Confronto diretto tra più fragranze.
-- Collegamenti ai negozi dove acquistare i prodotti.
-- Notifiche sulle novità.
-- Applicazione mobile dedicata.
+Ad esempio, potremmo introdurre un'intelligenza artificiale con cui parlare direttamente per chiedere consigli, oppure un sistema che suggerisce nuovi profumi in base a quelli che l'utente ha già salvato.
+
+Un'altra idea è aggiungere la possibilità di confrontare diversi profumi e trovare i negozi in cui acquistarli.
+
+In futuro vorremmo anche introdurre un abbonamento con alcune funzionalità esclusive.
+
 
 
 
